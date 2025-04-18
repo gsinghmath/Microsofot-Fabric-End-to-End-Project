@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_epex_spot_prices
+    description: The EPEX Spot prices for the day-ahead market
+    columns:
+      - name: market
+        description: The market for which this price is valid
+      - name: date
+        description: The date this price becomes valid
+      - name: start_time
+        description: The timestamp this price becomes valid
+      - name: end_time
+        description: The timestamp this price is no longer valid
+      - name: price_cent_kwh
+        description: The energy price (in euro cent/kWh)
+      - name: country
+        description: The country in which this market is located
+      - name: region
+        description: Where in Europe the market is located

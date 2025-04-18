@@ -1,0 +1,7 @@
+eur_enegry_prices:
+  target: local
+  outputs:
+    local:
+      type: duckdb
+      path: 'eur_enegry_prices.duckdb'
+      threads: 24
